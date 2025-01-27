@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Difference between i++ and ++i</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Differentiate between ++i and i++ with Examples</h1>
+    <h3>Answers:</h3>
+
+    <p class="pre-increment">
+      <strong>++i (Pre-increment):</strong><br>
+      When the pre-increment case (++i) is used in an expression, the original value is incremented by 1 before the expression is executed.<br>
+      <strong>Example:</strong><br>
+      <code>
+        let i = 1;<br>
+        ++i;<br>
+        let x = 10 * i;<br>
+        console.log(x); // Output: 20
+      </code><br>
+      This happens because the original value of <code>i</code> has been incremented by 1 before the expression is executed.
+    </p>
+
+    <p class="post-increment">
+      <strong>i++ (Post-increment):</strong><br>
+      For the post-increment case (i++), when it is assigned to an expression, the original value is used in the expression, and then it is incremented by 1.<br>
+      <strong>Example:</strong><br>
+      <code>
+        let i = 1;<br>
+        i++;<br>
+        let z = 10 * i;<br>
+        console.log(z); // Output: 10
+      </code><br>
+      Here, the original value of <code>i</code> is used in the expression before it is incremented by 1.<br>
+      In summary, <code>i++</code> increments after execution, while <code>++i</code> increments before execution.
+    </p>
+    <!-- Link the script file -->
+    <script src="script.js"></script>
+  </body>
+</html>
